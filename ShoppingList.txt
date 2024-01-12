@@ -2,4 +2,6 @@ Milk
 Break
 Bananas
 Eggs
-
+Soda
+Beef
+Chicken
