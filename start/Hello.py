@@ -9,10 +9,10 @@
 #print(n + pi)
 #print(pi * n)
 
-your_name = input('what is your name: ')
-num = int(input('How old are you: '))
+#your_name = input('what is your name: ')
+#num = int(input('How old are you: '))
 
-print('Hello ' + your_name)
-print('today is going to be a great day ... FOR A WHITE WEDDING!')
-print('in two years you will be:')
-print(num + 2)
+#print('Hello ' + your_name)
+#print('today is going to be a great day ... FOR A WHITE WEDDING!')
+#print('in two years you will be:')
+#print(num + 2)

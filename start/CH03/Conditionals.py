@@ -1,3 +1,6 @@
 #!/usr/bin/env python3
-# example workign with conditionals
-#By 
+# example working with conditionals
+# By Phillip Francis
+
+# import (module) as (name)
+# example: import math as poopypants
