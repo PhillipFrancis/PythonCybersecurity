@@ -11,10 +11,12 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 def write_log(message):
     # Get the Current Time
-    now = str(datetime.now())
-    message = now + str(message) + "\n"
+    now = str(datetime.now()) + "\t"
+    message = now + str(message) + "\n" 
     # Open a log file for appending
-    f = open(dir_path + "/pinger.log", "a")    #write message with date and time
+    f = open(dir_path + "/pinger.log", "a")    
+    #write message with date and time
+    f.write(message)
     #close file
     f.close
 def ping_address(ip_address):
