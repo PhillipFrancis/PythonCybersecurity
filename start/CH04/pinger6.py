@@ -14,11 +14,10 @@ def write_log(message):
     now = str(datetime.now()) + "\t"
     message = now + str(message) + "\n" 
     # Open a log file for appending
-    f = open(dir_path + "/pinger.log", "a")    
-    #write message with date and time
-    f.write(message)
-    #close file
-    f.close
+    with open(dir_path + "/pinger.log", "a") as f:
+        f.write(message)
+
+
 def ping_address(ip_address):
     # find our OS
     current_os = platform.system().lower()
@@ -35,12 +34,9 @@ def ping_address(ip_address):
     return False
 
 # open file for reading
+with open(dir_path + "/pinger.log", "a") as f:
+    ip_addresses = f.readlines()
 
-f = open(dir_path + "/ips.txt", "r")
-# Read file Contents
-ip_addresses = f.readlines()
-# close File
-f.close()
 # loop file
 for ip_address in ip_addresses:
     
