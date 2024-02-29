@@ -1,0 +1,8 @@
+# Create a veriable that will ask a user if it is a good day.
+User_answer = input("is today a good day? (Y/N): ")
+
+#creat a conditional based on the users input. 
+if User_answer == 'y':
+    #Make the program repeat 10 times
+    for User_answer in range(10):
+        print('Yes, it is!')

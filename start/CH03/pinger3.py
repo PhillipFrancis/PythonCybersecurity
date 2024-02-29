@@ -2,7 +2,10 @@
 # Third example of pinging from Python
 # By Phillip Francis 1/19
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 7eebfc477fbf202e11ca17d4d36cf4c8ad341c51
 import os
 import platform
 
@@ -25,4 +28,8 @@ for octet in range(255):
     exit_code = os.system(ping_cmd)
     # print out results
     if exit_code == 0:
+<<<<<<< HEAD
         print("{0} is online".format(ip_address))
+=======
+        print("{0} is online".format(ip_address))
+>>>>>>> 7eebfc477fbf202e11ca17d4d36cf4c8ad341c51
