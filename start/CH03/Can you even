@@ -1,0 +1,11 @@
+# Prompt user for input
+user_input = input("Enter a number: ")
+
+number = int(user_input)
+    
+# Is the number divisible by two?
+if number % 2 == 0:
+    print(f"{number} is even.")
+else:
+    print(f"{number} is NOT even.")
+
